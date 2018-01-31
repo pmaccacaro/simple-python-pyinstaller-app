@@ -9,7 +9,8 @@ pipeline {
             }
             steps {
                 sh 'python -m py_compile sources/add2vals.py sources/calc.py'
-                sh 'ls -ltr' 
+                sh 'ls -ltr'
+		sh 'uname -a' 
             }
         }
     }
